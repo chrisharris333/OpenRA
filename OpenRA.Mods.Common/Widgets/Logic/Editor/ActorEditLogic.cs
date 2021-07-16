@@ -131,6 +131,8 @@ namespace OpenRA.Mods.Common.Widgets.Logic
 					if (editorActorLayer[actorId] != null)
 					{
 						nextActorIDStatus = ActorIDStatus.Duplicate;
+						actorIDErrorLabel.Text = "Duplicate ActorID";
+						actorIDErrorLabel.Visible = true;
 						return;
 					}
 				}
